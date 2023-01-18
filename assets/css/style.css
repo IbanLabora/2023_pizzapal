@@ -197,7 +197,7 @@ p:last-child {
 .home-wrap h5,
 .home-wrap p {
     color: #ffffff;
-    font-family: 'roboto', sans-serif;
+    /*font-family: 'roboto', sans-serif;*/
 }
 .text {
     color: #333333;
@@ -935,9 +935,9 @@ font-size: 6rem;
 }
 
 .single_widget h3{
-    font-size:1.875rem;
+    font-size:2.875rem;
 
-	font-family: 'Pacifico', cursive;	
+	/*font-family: 'Pacifico', cursive;	*/
 }
 .single_widget_info p{
 	margin-top:40px;
