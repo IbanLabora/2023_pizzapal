@@ -4,3 +4,10 @@
     letter-spacing: 0.15em;    
     color: yellow;
 }
+.logopala{
+    width: 100%;
+    /*margin-top: 25px;*/
+}
+.espacio{
+    visibility: hidden;
+}
