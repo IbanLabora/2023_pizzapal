@@ -4,6 +4,16 @@
     letter-spacing: 0.15em;
     color: #F9E53C;
 }
+.fuenteChin_H3{
+    font-family: 'ChinUpButtercupCuteCaps';
+    font-size: 55px;
+    color: blue;/* #F9E53C;*/
+}
+.fuenteChin_H4{
+    font-family: 'ChinUpButtercupCuteCaps';
+    font-size: 35px;
+    color: blue;/* #F9E53C;*/
+}
 .logopala{
     width: 100%;
     /*margin-top: 25px;*/
