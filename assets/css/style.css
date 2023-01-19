@@ -751,10 +751,14 @@ font-size: 6rem;
 	display:inline-block;
 }
 .portfolio .portfolio_content .head_title h3{
-	color:#000000;
+	color:blue;
+    font-family: 'ChinUpButtercupCuteCaps';
+    font-size: 3.5rem;
 }
 .portfolio .portfolio_content .head_title h4{
-	color:#000000;
+	color:blue;
+    font-family: 'ChinUpButtercupCuteCaps';
+    font-size: 2.5rem;
 }
 
 .head_title{
