@@ -4,6 +4,10 @@
     letter-spacing: 0.15em;
     color: #F9E53C;
 }
+.fuenteChin_H1{
+    font-family: 'ChinUpButtercupCuteCaps';
+    color: blue;/* #F9E53C;*/
+}
 .fuenteChin_H3{
     font-family: 'ChinUpButtercupCuteCaps';
     font-size: 3.5rem;
@@ -20,4 +24,7 @@
 }
 .espacio{
     visibility: hidden;
+}
+.derechosReservados{
+    font-size: 12px;
 }
