@@ -1,17 +1,21 @@
 .fuenteChin{
     font-family: 'ChinUpButtercupCuteCaps';
-    font-size: 25px;
+    font-size: 1.5rem;
     letter-spacing: 0.15em;
     color: #F9E53C;
 }
+.fuenteChin_H1{
+    font-family: 'ChinUpButtercupCuteCaps';
+    color: blue;/* #F9E53C;*/
+}
 .fuenteChin_H3{
     font-family: 'ChinUpButtercupCuteCaps';
-    font-size: 55px;
+    font-size: 3.5rem;
     color: blue;/* #F9E53C;*/
 }
 .fuenteChin_H4{
     font-family: 'ChinUpButtercupCuteCaps';
-    font-size: 35px;
+    font-size: 2.5rem;
     color: blue;/* #F9E53C;*/
 }
 .logopala{
@@ -20,4 +24,7 @@
 }
 .espacio{
     visibility: hidden;
+}
+.derechosReservados{
+    font-size: 12px;
 }
