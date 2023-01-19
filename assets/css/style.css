@@ -809,17 +809,17 @@ font-size: 6rem;
 
 /*Amazing Deliceas Section css */
 .ourPakeg .main_pakeg_content .head_title h3{
-	color:#fff;
-	
+	color:blue;
+	font-family: 'ChinUpButtercupCuteCaps';
 }
 .ourPakeg .main_pakeg_content .head_title h4{
-	color:#fff;
-	font-family: 'Pacifico', cursive;
-	font-size:1.875rem;
+	color:blue;
+	font-family: 'ChinUpButtercupCuteCaps';
+	font-size:4.875rem;
 }
 
 .ourPakeg{
-	background:url(../images/newsbg.jpg) no-repeat center top scroll;
+	background:url(../images/maderaMenu2.png) no-repeat center top scroll;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
