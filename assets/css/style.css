@@ -848,9 +848,9 @@ a.navbar-brand.our_logo{
 }
 .single_pakeg_three{
 	background:url(../images/newsthree.jpg) left center no-repeat;
-	padding:30px;	
+	padding:30px;
 	overflow:hidden;
-	margin-top:60px;	
+	margin-top:60px;
 	
 }
 
@@ -950,7 +950,7 @@ a.navbar-brand.our_logo{
 	display:block;
 }
 .single_widget_info p span.phone_email{
-	margin-top:15px;
+	margin-top:20px;
 }
 .footer_socail_icon{
 	margin-top:90px;
@@ -982,7 +982,7 @@ a.navbar-brand.our_logo{
 }
 .footer .copyright p a{
 	padding:0px 10px;
-	color:green;
+	color:white;
 }
 
 

@@ -30,6 +30,13 @@
 .espacio{
     visibility: hidden;
 }
+.comentario{
+    color:white;
+}
+a:hover {
+    color: #1717FF;
+    cursor: pointer;
+  }
 .derechosReservados{
     font-size: 12px;
 }
