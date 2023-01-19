@@ -6,7 +6,12 @@
 }
 .fuenteChin_H1{
     font-family: 'ChinUpButtercupCuteCaps';
-    color: blue;/* #F9E53C;*/
+    color:#F9E53C;/* #F9E53C;*/
+}
+.logoAmarillo{
+    width: 40%;
+    display:block;
+    margin:auto;
 }
 .fuenteChin_H3{
     font-family: 'ChinUpButtercupCuteCaps';
@@ -25,6 +30,13 @@
 .espacio{
     visibility: hidden;
 }
+.comentario{
+    color:white;
+}
+a:hover {
+    color: #1717FF;
+    cursor: pointer;
+  }
 .derechosReservados{
     font-size: 12px;
 }

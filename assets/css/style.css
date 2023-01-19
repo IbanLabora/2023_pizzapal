@@ -656,7 +656,7 @@ a.navbar-brand.our_logo{
 /* slider section */
 
 .slider{
-	background:url(../images/bannerbg.jpg) center center no-repeat;
+	background:url(../images/pizzas/image00115.jpeg) center center no-repeat;
 	background-size:cover;
 }
 /*
@@ -669,10 +669,10 @@ a.navbar-brand.our_logo{
    /* font-family: 'Pacifico', cursive;
     color: #fff;*/
     line-height: 6rem;
-    margin:0px 0px 60px 0px;
+    margin:0px 0px 0px 0px;
 }	
 .main_slider_content{
-	padding:250px 0px 200px 0px;
+	padding:200px 0px 100px 0px;
 	width:70%;
 	margin:0 auto;
 	color:#fff;
@@ -848,9 +848,9 @@ a.navbar-brand.our_logo{
 }
 .single_pakeg_three{
 	background:url(../images/newsthree.jpg) left center no-repeat;
-	padding:30px;	
+	padding:30px;
 	overflow:hidden;
-	margin-top:60px;	
+	margin-top:60px;
 	
 }
 
@@ -950,7 +950,7 @@ a.navbar-brand.our_logo{
 	display:block;
 }
 .single_widget_info p span.phone_email{
-	margin-top:15px;
+	margin-top:20px;
 }
 .footer_socail_icon{
 	margin-top:90px;
@@ -982,7 +982,7 @@ a.navbar-brand.our_logo{
 }
 .footer .copyright p a{
 	padding:0px 10px;
-	color:green;
+	color:white;
 }
 
 
