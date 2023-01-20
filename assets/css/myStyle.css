@@ -37,3 +37,8 @@ a:hover {
 .derechosReservados{
     font-size: 12px;
 }
+@media (max-width: 780px) {
+    .navbar-collapse>.navbar-nav>li>a{
+        color: #F9E53C;
+    }
+}
