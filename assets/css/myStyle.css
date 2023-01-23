@@ -41,6 +41,12 @@ a:hover {
     .navbar-collapse>.navbar-nav>li>a{
         color: #F9E53C;
     }
+    div,p{
+        text-align: center;
+    }
+    .logopala{
+        margin-top: 55px;
+    }
 }
 /*------------------------------MENU DE PIZZAS----------------------------------------*/
 .tamanoLetra{
