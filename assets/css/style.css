@@ -834,20 +834,20 @@ a.navbar-brand.our_logo{
 }
 
 .single_pakeg_one{
-	background:url(../images/newsone.jpg) left center no-repeat;
+	background:url(../images/croquetas.png) left center no-repeat;
 	padding:30px;
 	overflow:hidden;
 	margin-top:60px;
 }
 .single_pakeg_two{
-	background:url(../images/newstwo.jpg) right center no-repeat;
+	background:url(../images/tiramisu.png) right center no-repeat;
 	padding:30px;	
 	overflow:hidden;
 	margin-top:60px;	
 	
 }
 .single_pakeg_three{
-	background:url(../images/tiramisu.png) left center no-repeat;
+	background:url(../images/COLA.png) left center no-repeat;
 	padding:30px;
 	overflow:hidden;
 	margin-top:60px;
