@@ -42,3 +42,27 @@ a:hover {
         color: #F9E53C;
     }
 }
+/*------------------------------MENU DE PIZZAS----------------------------------------*/
+.colorMenuLetra{
+    color:#1717FF;
+}
+.negritaPizzas{
+    font-weight: bold;
+}
+.alinearLeft{
+    text-align: left;
+}
+.ingredientesMenu{
+    font-size: 0.85em;
+    margin-top: -20px;
+}
+.centrarTexto{
+    text-align: center;
+}
+.margenAbajo{
+    margin-bottom: 20px;
+}
+.margenMenupizza{
+    margin: 20px;
+}
+/*------------------------------MENU DE PIZZAS----------------------------------------*/

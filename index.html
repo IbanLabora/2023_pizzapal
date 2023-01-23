@@ -38,6 +38,7 @@
             display: none;
         }
     </style>
+    <link rel="icon" type="image/jpg" href="/favicon.ico"/>
 </head>
 
 <body>
@@ -199,7 +200,7 @@
                             <h3>MENU</h3>
                             <h4>Experience</h4>
                         </div>
-                        <div class="main_portfolio_content">
+                        <div class="main_portfolio_content ">
                             <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
                                 <img src="assets/images/pizzas/pala/tonno2.jpeg" alt="" />
                                 <div class="portfolio_images_overlay text-center">
@@ -209,7 +210,7 @@
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                <img src="assets/images/pizzas/pala gourmet/carbonara.jpeg" alt="" />
+                                <img src="assets/images/pizzas/palaGourmet/carbonara.jpeg" alt="" />
                                 <div class="portfolio_images_overlay text-center" onclick="openMenu(event, 'gourmet');">
                                     <h6>Pala Gourmet</h6>
                                     <a href="javascript:void(0)" onclick="openMenu(event, 'pala');"
@@ -234,77 +235,61 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="pala" class=" menu">
-                            <h2>Pizzas Pala</h2>
-                            <table style="border:1px solid black;">                          
-                               <tr>      
-                                    <td><span>MARGARITA</span></td>
-                                    <td><span>..............................7€</span></td><br>
-                                    <td>tomate, mozarella fior di latte, albahaca, orégano</td>
-                                    <td><span>CARDINALE</span></td>
-                                    <td><span>..............................8€</span></td><br>
-                                    <td>tomate, mozzarella fior di latte, jamón cocido, albahaca, orégano</td>
-                            
-                                </tr>
-                                <tr>
-                         
-                                    <td><span>BUFALINA</span></td>
-                                    <td><span>..............................9€</span></td><br>
-                                    <td> mozarella fior di latte, mozzarella di búfalo, tomate cherry, rúcula, albahaca, orégano</td>
-                           
-                                    <td><span>GENOVESE</span></td>
-                                    <td><span>..............................9€</span></td><br>
-                                    <td>mozzarella fior di latte, pesto, escamas de parmeggiano, tomate cherry, albahaca, orégano</td>
-                                </tr>   
-                                <tr>
-                                    <td><span>NAPOLI</span></td>
-                                    <td><span>..............................9.50€</span></td><br>
-                                    <td>mozzarella fior di latte, anchoas, alcaparras, aceitunas</td>
-                            
-                                    <td><span>TONNO</span></td>
-                                    <td><span>..............................9.50€</span></td><br>
-                                    <td>tomate, mozzarella fior di latte, atún, cebolla morada, albahaca, orégano</td>
-                                </tr>  
-                                <tr>  
-                                    <td><span>MIÑOLINO</span></td>
-                                    <td><span>..............................9.50€</span></td><br>
-                                    <td>tomate, mozzarella fior di latte, salami picante, nduja(sobrasada picante), olive nere, orégano</td>
-                            
-                                    <td><span>PHILADELPHIA</span></td>
-                                    <td><span>..............................10€</span></td><br>
-                                    <td>tomate, mozzarella fior di latte, jamon serranó, philadelphia, albahaca, orégano</td>
-                                </tr>   
-                                <tr> 
-                                    <td><span>4 FORMAGGi</span></td>
-                                    <td><span>..............................10€</span></td><br>
-                                    <td>tomate, mozzarella fior di latte, gorgonzola, parmeggiano, scamorza, albahaca, orégano</td>
-                                
-                                    <td><span>BARBACOA</span></td>
-                                    <td><span>..............................10€</span></td><br>
-                                    <td>tomate, mozzarella fior di latte, pollo, panceta, salsa barbacoa</td>
-                                </tr>
-                                <tr>    
-                                    <td><span>VEGETAL</span></td>
-                                    <td><span>..............................10€</span></td><br>
-                                    <td>tomate, mozzarella fior di latte, berenjena, calabacin, champiñion, pimiento rojo, albahaca, orégano</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div id="gourmet" class=" menu">
-                            <h2>Pizzas Gourmet</h2>
-                            <p>London is the capital city of England.</p>
-                        </div>
-                        <div id="dolce" class=" menu">
-                            <h2>Pizzas Dolce</h2>
-                            <p>London is the capital city of England.</p>
-                        </div>
-                        <div id="focaccia" class=" menu">
-                            <h2>Focaccia</h2>
-                            <p>London is the capital city of England.</p>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="pala" class="container colorMenuLetra margenAbajo">
+            <div class="row ">
+                <h2 class="centrarTexto negritaPizzas colorMenuLetra margenMenupizza">Pizza Pala</h2>                       
+                <div class="col-lg-6 col-sm-12 alinearLeft">   
+                    <p class="negritaPizzas">MARGARITA..............................7€</p>
+                    <p class="ingredientesMenu">tomate, mozarella fior di latte, albahaca, orégano</p>
+                    <p class="negritaPizzas">CARDINALE..............................8€</p>
+                    <p class="ingredientesMenu">tomate, mozzarella fior di latte, jamón cocido, albahaca, orégano</p>
+                </div>
+                <div class="col-md-6 col-sm-12 alinearLeft">
+                    <p class="negritaPizzas">BUFALINA..............................9€</p>
+                    <p class="ingredientesMenu"> mozarella fior di latte, mozzarella di búfalo, tomate cherry, rúcula, albahaca, orégano</p>
+                    <p class="negritaPizzas">GENOVESE..............................9€</p>
+                    <p class="ingredientesMenu">mozzarella fior di latte, pesto, escamas de parmeggiano, tomate cherry, albahaca, orégano</p>
+                </div>   
+                <div class="col-md-6 col-sm-12 alinearLeft">
+                    <p class="negritaPizzas">NAPOLI..............................9.50€</p>
+                    <p class="ingredientesMenu">mozzarella fior di latte, anchoas, alcaparras, aceitunas</p>
+                    <p class="negritaPizzas">TONNO..............................9.50€</p>
+                    <p class="ingredientesMenu">tomate, mozzarella fior di latte, atún, cebolla morada, albahaca, orégano</p>
+                </div>  
+                <div class="col-md-6 col-sm-12 alinearLeft">  
+                    <p class="negritaPizzas">MIÑOLINO..............................9.50€</p>
+                    <p class="ingredientesMenu">tomate, mozzarella fior di latte, salami picante, nduja(sobrasada picante), olive nere, orégano</p>
+                    <p class="negritaPizzas">PHILADELPHIA..............................10€</p>
+                    <p class="ingredientesMenu">tomate, mozzarella fior di latte, jamon serranó, philadelphia, albahaca, orégano</p>
+                </div>   
+                <div class="col-md-6 col-sm-12 alinearLeft"> 
+                    <p class="negritaPizzas">4 FORMAGGi..............................10€</p>
+                    <p class="ingredientesMenu">tomate, mozzarella fior di latte, gorgonzola, parmeggiano, scamorza, albahaca, orégano</p>
+                    <p class="negritaPizzas">BARBACOA..............................10€</p>
+                    <p class="ingredientesMenu">tomate, mozzarella fior di latte, pollo, panceta, salsa barbacoa</p>
+                </div>
+                <div class="col-md-6 col-sm-12 alinearLeft">
+                    <p class="negritaPizzas">VEGETAL..............................10€</p>
+                    <p class="ingredientesMenu">tomate, mozzarella fior di latte, berenjena, calabacin, champiñion, pimiento rojo, albahaca, orégano</p>
+                </div>
+            </div>
+        </div>
+        <div id="gourmet" class=" menu">
+            <h2>Pizzas Gourmet</h2>
+            <p>London is the capital city of England.</p>
+        </div>
+        <div id="dolce" class=" menu">
+            <h2>Pizzas Dolce</h2>
+            <p>London is the capital city of England.</p>
+        </div>
+        <div id="focaccia" class=" menu">
+            <h2>Focaccia</h2>
+            <p>London is the capital city of England.</p>
         </div>
     </section>
 
