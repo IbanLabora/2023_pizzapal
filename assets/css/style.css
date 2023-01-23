@@ -656,7 +656,7 @@ a.navbar-brand.our_logo{
 /* slider section */
 
 .slider{
-	background:url(../images/pizzas/palaGourmet/variasTartufina.jpeg) center center no-repeat;
+	background:url(../images/pizzas/palagourmet/variasTartufina.jpeg) center center no-repeat;
 	background-size:cover;
 }
 /*
@@ -747,7 +747,7 @@ a.navbar-brand.our_logo{
 }
 
 .portfolio_content{
-	padding-bottom:120px;
+	padding-bottom:20px;
 	display:inline-block;
 }
 .portfolio .portfolio_content .head_title h3{
