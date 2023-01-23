@@ -65,4 +65,7 @@ a:hover {
 .margenMenupizza{
     margin: 20px;
 }
+.menu {/*Esta linea oculta los diferentes menus de las pizzas*/
+    display: none;
+}
 /*------------------------------MENU DE PIZZAS----------------------------------------*/
