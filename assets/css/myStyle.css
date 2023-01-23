@@ -72,3 +72,10 @@ a:hover {
     display: none;
 }
 /*------------------------------MENU DE PIZZAS----------------------------------------*/
+/*------------------------MENU DE ENTRANTES Y BEBIDAS----------------------*/
+.single_pakeg_text ul li{
+    background: url(../images/pkli.png) no-repeat left center;
+    padding: 15px 0px 15px 60px;
+    margin-top: 20px;
+	
+}
