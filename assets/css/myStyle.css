@@ -15,7 +15,7 @@
 }
 .fuenteChin_H3{
     font-family: 'ChinUpButtercupCuteCaps';
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: blue;/* #F9E53C;*/
 }
 .fuenteChin_H4{
@@ -43,6 +43,9 @@ a:hover {
     }
 }
 /*------------------------------MENU DE PIZZAS----------------------------------------*/
+.tamanoLetra{
+    font-size: 4em;
+}
 .colorMenuLetra{
     color:#1717FF;
 }
@@ -63,9 +66,9 @@ a:hover {
     margin-bottom: 20px;
 }
 .margenMenupizza{
-    margin: 20px;
+    margin: 40px;
 }
-.menu {/*Esta linea oculta los diferentes menus de las pizzas*/
+#gourmet,#dolce,#focaccia{/*.menu *//*Esta linea oculta los diferentes menus de las pizzas*/
     display: none;
 }
 /*------------------------------MENU DE PIZZAS----------------------------------------*/
