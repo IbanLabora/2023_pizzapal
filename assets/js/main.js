@@ -27,7 +27,7 @@ jQuery(document).ready(function ($) {
 		event.preventDefault();
 	});
 	
-	
+	/*
 	jQuery(window).scroll(function () {
 	  var top = jQuery(document).scrollTop();
 		var height = 300;
@@ -38,7 +38,7 @@ jQuery(document).ready(function ($) {
 	  } else {
 	   jQuery('.navbar-fixed-top').removeClass('menu-scroll');
 	  }
-	});	
+	});	*/
  // Scroll up 
 
     $(window).scroll(function(){
