@@ -856,6 +856,7 @@ a.navbar-brand.our_logo{
 	background:#fff;
 	padding:30px;
 	text-align:left;
+    border:1px black solid;
 }
 
 
@@ -915,7 +916,7 @@ a.navbar-brand.our_logo{
 
 /* Footer Section CSS */
 .footer_widget{
-	background:url(../images/footerbg.jpg) center top no-repeat scroll;
+	background:url(../images/footerbg2.jpg) center top no-repeat scroll;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
