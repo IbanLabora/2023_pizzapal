@@ -149,6 +149,9 @@ td:last-child{
     background:url(../images/portfoliobg.jpg) !important;
     padding-left: 0.5em;
  }
+ .marginwasdTop{
+    padding-bottom: 25px;
+ }
 /*------------------------MENU DE ENTRANTES Y BEBIDAS----------------------*/
 /***************************Footer*********************/
 .letrafooter{
