@@ -16,12 +16,12 @@
 .fuenteChin_H3{
     font-family: 'ChinUpButtercupCuteCaps';
     font-size: 4rem;
-    color: blue;/* #F9E53C;*/
+    color: #1717FF;/* #F9E53C;*/
 }
 .fuenteChin_H4{
     font-family: 'ChinUpButtercupCuteCaps';
     font-size: 2.5rem;
-    color: blue;/* #F9E53C;*/
+    color: #1717FF;/* #F9E53C;*/
 }
 
 .espacio{
@@ -36,17 +36,6 @@ a:hover {
   }
 .derechosReservados{
     font-size: 12px;
-}
-@media (max-width: 780px) {
-    .navbar-collapse>.navbar-nav>li>a{
-        color: #F9E53C;
-    }
-    div,p{
-        text-align: center;
-    }
-    .logopala{
-        margin-top: 55px;
-    }
 }
 /*------------------------------MENU DE PIZZAS----------------------------------------*/
 .tamanoLetra{
@@ -84,8 +73,8 @@ a:hover {
     padding: 15px 0px 15px 60px;
     margin-top: 20px;
 }
-.n1.5{
-    background: url(../images/pkli1.5.png) no-repeat left center;
+.n1-5{
+    background: url(../images/pkli1-5.png) no-repeat left center;
     padding: 15px 0px 15px 60px;
     margin-top: 20px;
 }
@@ -94,13 +83,13 @@ a:hover {
     padding: 15px 0px 15px 60px;
     margin-top: 20px;
 }
-.n2.5{
-    background: url(../images/pkli2.5.png) no-repeat left center;
+.n2-5{
+    background: url(../images/pkli2-5.png) no-repeat left center;
     padding: 15px 0px 15px 60px;
     margin-top: 20px;
 }
-.n4.5{
-    background: url(../images/pkli4.5.png) no-repeat left center;
+.n4-5{
+    background: url(../images/pkli4-5.png) no-repeat left center;
     padding: 15px 0px 15px 60px;
     margin-top: 20px;
 }
@@ -109,8 +98,8 @@ a:hover {
     padding: 15px 0px 15px 60px;
     margin-top: 20px;
 }
-.n5.5{
-    background: url(../images/pkli5.5.png) no-repeat left center;
+.n5-5{
+    background: url(../images/pkli5-5.png) no-repeat left center;
     padding: 15px 0px 15px 60px;
     margin-top: 20px;
 }
@@ -119,3 +108,11 @@ a:hover {
     padding: 15px 0px 15px 60px;
     margin-top: 20px;
 }
+/*------------------------MENU DE ENTRANTES Y BEBIDAS----------------------*/
+/***************************Footer*********************/
+.letrafooter{
+    font-family: 'ChinUpButtercupCuteCaps';
+    color:#F9E53C;
+    font-size: 2em;
+}
+/***************************Footer*********************/
