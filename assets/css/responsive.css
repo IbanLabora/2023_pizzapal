@@ -91,6 +91,13 @@ h1{font-size:90%;}
     text-shadow: 5px 5px 6px #1717FF;
     border:1px black solid;
     color:yellow;
+    
+}
+.quitarpading{
+    margin: -25px;
+}
+.masmargin{
+    margin-bottom: 5px;
 }
 }
 
