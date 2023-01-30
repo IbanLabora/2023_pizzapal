@@ -178,8 +178,11 @@ h5 {
     margin-bottom: 1rem;
 }
 h6 {
-    font-size: 1rem;
+     text-shadow: 5px 5px 6px blue;
     margin-bottom: .9rem;
+    font-family: 'ChinUpButtercupCuteCaps';
+    font-size: 3em;
+    color: #F9E53C;
 }
 p {
     line-height: 1.5rem;
@@ -370,13 +373,14 @@ Button
 .btn-primary:focus,
 .btn-primary.disabled,
 .btn-primary.disabled:hover {
-    color: #ffffff;
-    background-color: #d6962c;
-    border-color: #d6962c;
+    color: blue;
+    background-color: #F9E53C;
+    border-color: #F9E53C;
 }
 .btn {
-    margin-right: 15px;
+    margin-right: 10px;
     border-radius: 0px;
+    margin-top: 5px;
 }
 /*.btn-default:active, .btn-default:hover  {
     background: transparent;
@@ -387,22 +391,22 @@ Button
     font-size: 1.2rem;
     border-radius: 4px;
     width: 200px;
-    border: 1px solid #fff;
+    border: 1px solid blue;
     text-transform: none;
     transition: .6s;
     margin-top: 30px;
-    color: #fff;
+    color: blue;
 }
 button.btn-lg{
     padding: 10px;
     font-size: 1.2rem;
     border-radius: 4px;
     width: 200px;
-    border: 1px solid #fff;
+    border: 1px solid blue;
     text-transform: none;
     transition: .6s;
     margin-top: 30px;
-    color: #fff;
+    color: #blue;
 	display:inline-block;
 	background:transparent;
 	line-height: 1.5em;
@@ -410,8 +414,8 @@ button.btn-lg{
 
 
 button.btn-lg:hover{
-	background:#d6962c;
-	color:#fff;
+	background:#F9E53C;
+	color:blue;
 }
 
 .btn-md,
@@ -422,49 +426,49 @@ button.btn-lg:hover{
 }
 
 .btn-primary {
-    color: #ffffff;
+    color: blue;
 }
 .btn-primary:active,
 .btn-primary:hover {
-    background: #d6962c;
+    background: #F9E53C;
 }
 
 .btn-default {
-    color: #ffffff;
-    border: 2px solid #ffffff;
+    color: blue;
+    border: 2px solid blue;
     background-color: transparent;
 }
 .btn-default:before,
 .btn-default:after {
-    background-color: #ffffff;
+    background-color: blue;
 }
 .btn-default:focus {
-    background-color: #ffffff;
+    background-color: blue;
     border-color: transparent;
 }
 .btn-default:hover {
-    border-color: #ffffff;
+    border-color:blue
     color: #f56363;
     background-color: #ffffff;
 }
 .btn-primary {
-    background-color: #E7A331;
-    color: #ffffff;
-    border: 2px solid #E7A331;
+    background-color: #F9E53C;
+    color:blue;
+    border: 2px solid #F9E53C;
     text-transform: uppercase;
 	border-radius:4px;
 }
 .btn-primary:before,
 .btn-primary:after {
-    background-color: #ffffff;
+    background-color: blue;
 }
 .btn-primary:focus {
-    background-color: #d6962c;
-    border-color: #d6962c;
+    background-color: #F9E53C;
+    border-color: #F9E53C;
 }
 .btn-primary:hover {
-    border-color: #d6962c;
-    color: #fff;
+    border-color: #F9E53C;
+    color: blue;
 }
 /*
 Extra height css
@@ -794,13 +798,13 @@ a.navbar-brand.our_logo{
 .portfolio_images_overlay h6{
 	text-transform:uppercase;
 	color:#fff;
-	font-size:1.3125rem;
+    margin-top: 40px;
+	
 	line-height:2rem;
 }
 
 .portfolio_images_overlay p.product_price{
-	font-size:2.5725rem;
-	color:#fff;
+	font-size:3em;
 	line-height:3rem;
 }
 
