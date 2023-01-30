@@ -382,9 +382,9 @@ Button
     border-radius: 0px;
     margin-top: 5px;
 }
-/*.btn-default:active, .btn-default:hover  {
+.btn-default:active, .btn-default:hover  {
     background: transparent;
-}*/
+}
 .btn-lg,
 .btn-group-lg > .btn {
     padding: 8px;
@@ -406,7 +406,7 @@ button.btn-lg{
     text-transform: none;
     transition: .6s;
     margin-top: 30px;
-    color: #blue;
+    color: blue;
 	display:inline-block;
 	background:transparent;
 	line-height: 1.5em;
