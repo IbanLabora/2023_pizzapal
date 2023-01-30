@@ -52,8 +52,9 @@ a:hover {
 }
 .ingredientesMenu{
     font-size: 0.85em;
-   margin-top: -20px;
-    margin-left: 7px;
+    margin-top: -20px;
+    margin-left: 15px;
+    color:black;
 }
 .centrarTexto{
     text-align: center;
