@@ -1,100 +1,159 @@
-
 /*
 Author: XpeedStudio;
 Author URI: http://themeforest.net/user/XpeedStudio/portfolio;
 */
 
 @media (max-width:991px) {
-.portfolio_images_overlay {
-    padding: 0px;
-}
-body{
-    font-size:95%;
-}
-h1{font-size:90%;}
+    .portfolio_images_overlay {
+        padding: 0px;
+    }
 
-.single_pakeg_text ul li {
-    background: url(../images/pkli.png) no-repeat left center;
-    padding: 5px 0px 5px 60px;
-    margin-top: 15px;
-}
-.single_monail_apps_text {
-    margin-top: 40px;
+    body {
+        font-size: 95%;
+    }
+
+    h1 {
+        font-size: 90%;
+    }
+
+    .single_pakeg_text ul li {
+        background: url(../images/pkli.png) no-repeat left center;
+        padding: 5px 0px 5px 60px;
+        margin-top: 15px;
+    }
+
+    .single_monail_apps_text {
+        margin-top: 40px;
+    }
+
+    .main_mobail_apps_content img {
+        text-align: right;
+    }
+
+    .single_monail_apps_text a {
+        margin-right: 5px;
+    }
+
+    .main_menu_bg a.navbar-brand.our_logo {
+        top: -20px;
+        width: 35%;
+    }
+
 }
 
-.main_mobail_apps_content img{
-    text-align: right;
-}
-
-.single_monail_apps_text a{
-    margin-right:5px;
-}
-.main_menu_bg a.navbar-brand.our_logo{
-	top: -20px;
-	width: 35%;
-}
-	
-}
 
 
 
+@media (max-width:760px) {
+    .centrarTextoMovil {
+        text-align: center;
+    }
 
-@media (max-width:768px){
-.centrarTextoMovil{
-    text-align: center;
+    .main_menu_bg a.navbar-brand.our_logo {
+        top: -78px;
+        width: 30%;
+    }
+
+    .single_monail_apps_text {
+        margin-top: 40px;
+    }
+
+    .main_mobail_apps_content img {
+        text-align: right;
+    }
+
+    .menu-scroll .main_menu_bg a.navbar-brand.our_logo {
+        top: -16px;
+        width: 40%;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: #E7A331;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: #fff;
+    }
+
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-color: transparent;
+        border: 0px;
+        background: rgba(0, 0, 0, .45);
+        margin-top: 14px;
+    }
+
+    .navbar-collapse>.navbar-nav>li>a {
+        color: #F9E53C;
+    }
+
+    .logopala {
+        margin-top: 55px;
+    }
+
+    .single_pakeg_text {
+        background: rgb(250, 250, 250, 0.6);
+        padding: 30px;
+        text-align: center;
+        text-shadow: 5px 5px 6px #1717FF;
+        border: 1px black solid;
+        color: yellow;
+
+    }
+
+    .quitarpading {
+        margin: -25px;
+    }
+
+    .masmargin {
+        margin-bottom: 5px;
+    }
+
+    .logoAmarillo {
+        width: 50%;
+    }
 }
-.main_menu_bg a.navbar-brand.our_logo{
-    top: -78px;
-    width: 45%;
+
+@media (max-width:690px) {
+    .main_menu_bg a.navbar-brand.our_logo {
+        top: -78px;
+        width: 30%;
+    }
 }
-	
-.single_monail_apps_text {
-    margin-top: 40px;
+
+@media (max-width:600px) {
+    .main_menu_bg a.navbar-brand.our_logo {
+        top: -78px;
+        width: 35%;
+    }
+
 }
-.main_mobail_apps_content img{
-    text-align: right;
+
+@media (max-width:500px) {
+    .main_menu_bg a.navbar-brand.our_logo {
+        top: -78px;
+        width: 45%;
+    }
+
 }
-.menu-scroll .main_menu_bg a.navbar-brand.our_logo {
-    top: -16px;
-    width: 60%;
+
+@media (max-width:400px) {
+    .main_menu_bg a.navbar-brand.our_logo {
+        top: -78px;
+        width: 45%;
+    }
+
 }
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #E7A331;
-}
-.navbar-default .navbar-toggle {
-    border-color: #fff;
-}
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: transparent;
-    border: 0px;
-    background: rgba(0, 0, 0, .45);
-    margin-top: 14px;
-}
-.navbar-collapse>.navbar-nav>li>a{
-    color: #F9E53C;
-}
-.logopala{
-    margin-top: 55px;
-}
-.single_pakeg_text{
-	background:rgb(250, 250, 250, 0.6);
-	padding:30px;
-	text-align:center;
-    text-shadow: 5px 5px 6px #1717FF;
-    border:1px black solid;
-    color:yellow;
-    
-}
-.quitarpading{
-    margin: -25px;
-}
-.masmargin{
-    margin-bottom: 5px;
-}
-.logoAmarillo{
-    width: 50%;
-}
+
+@media (max-width:350px) {
+    .main_menu_bg a.navbar-brand.our_logo {
+        top: -78px;
+        width: 55%;
+    }
+
 }
