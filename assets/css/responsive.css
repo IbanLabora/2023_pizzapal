@@ -12,12 +12,12 @@ body{
     font-size:95%;
 }
 h1{font-size:90%;}
-/*
+
 .single_pakeg_text ul li {
     background: url(../images/pkli.png) no-repeat left center;
     padding: 5px 0px 5px 60px;
     margin-top: 15px;
-}*/
+}
 .single_monail_apps_text {
     margin-top: 40px;
 }
@@ -30,14 +30,9 @@ h1{font-size:90%;}
     margin-right:5px;
 }
 .main_menu_bg a.navbar-brand.our_logo{
-	top: -77px;
-	width: 40%;
+	top: -20px;
+	width: 35%;
 }
-.menu-scroll .main_menu_bg a.navbar-brand.our_logo {
-    top: -16px;
-    width: 35%;
-}
-
 	
 }
 
@@ -50,7 +45,7 @@ h1{font-size:90%;}
 }
 .main_menu_bg a.navbar-brand.our_logo{
     top: -78px;
-    width: 35%;
+    width: 45%;
 }
 	
 .single_monail_apps_text {
@@ -61,7 +56,7 @@ h1{font-size:90%;}
 }
 .menu-scroll .main_menu_bg a.navbar-brand.our_logo {
     top: -16px;
-    width: 50%;
+    width: 60%;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
@@ -99,28 +94,7 @@ h1{font-size:90%;}
 .masmargin{
     margin-bottom: 5px;
 }
+.logoAmarillo{
+    width: 50%;
 }
-
-
-@media screen (min-width:320px) and (max-width:480px){
-
-.header_top_menu .call_us_text{
-	display:none !important;
-}
-.main_menu_bg a.navbar-brand.our_logo{
-    top: -78px;
-    width: 35%;
-}
-	
-.single_monail_apps_text {
-    margin-top: 40px;
-}
-.main_mobail_apps_content img{
-    text-align: right;
-}
-.menu-scroll .main_menu_bg a.navbar-brand.our_logo {
-    top: -16px;
-    width: 60%;
-}
-
 }
