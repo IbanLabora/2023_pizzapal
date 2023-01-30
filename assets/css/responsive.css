@@ -124,6 +124,16 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio;
         top: -78px;
         width: 30%;
     }
+    /*
+    Con la siguiente linea, indicamos que de forma permanente esten visibles los botones
+    "ver más" en el menu de las pizzas.    
+    */
+    .single_portfolio_text .portfolio_images_overlay{
+        top: 28px;
+        left: 14px;
+        background: rgba(0, 0, 0, .38);
+    }
+
 }
 
 @media (max-width:600px) {
@@ -139,7 +149,7 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio;
         top: -78px;
         width: 45%;
     }
-
+   
 }
 
 @media (max-width:400px) {
