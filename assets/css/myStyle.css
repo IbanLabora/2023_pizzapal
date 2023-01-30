@@ -1,4 +1,4 @@
-.fuenteChin{
+.fuenteChin {
     font-family: 'ChinUpButtercupCuteCaps';
     font-size: 1.5rem;
     letter-spacing: 0.15em;
@@ -24,6 +24,16 @@
     color: #1717FF;/* #F9E53C;*/
 }
 
+.fuenteChin_boton{
+    font-family: 'ChinUpButtercupCuteCaps';
+    color: blue;
+    font-size: 1.9em;
+    width: 105px;
+    height: 50px;
+    padding: 2px;
+   
+   
+}
 .espacio{
     visibility: hidden;
 }
