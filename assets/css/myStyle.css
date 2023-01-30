@@ -38,6 +38,9 @@ a:hover {
     font-size: 12px;
 }
 /*------------------------------MENU DE PIZZAS----------------------------------------*/
+table, span{
+    margin-left: -10px;
+}
 .tamanoLetra{
     font-size: 4em;
 }
@@ -53,7 +56,6 @@ a:hover {
 .ingredientesMenu{
     font-size: 0.85em;
     margin-top: -20px;
-    margin-left: 15px;
     color:black;
 }
 .centrarTexto{

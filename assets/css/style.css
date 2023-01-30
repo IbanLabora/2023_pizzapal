@@ -127,9 +127,10 @@ input[type="color"],
     height: 34px;
     max-width: 90%;
     background: #323232;
+    color:white;
 }
 .form-control:focus {
-    border-color: #d6962c;
+    border-color: #F9E53C;
     
 }
 h1,
