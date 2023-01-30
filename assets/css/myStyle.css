@@ -82,45 +82,77 @@ table, span{
 }
 /*------------------------------MENU DE PIZZAS----------------------------------------*/
 /*------------------------MENU DE ENTRANTES Y BEBIDAS----------------------*/
-.n1{
-    background: url(../images/pkli1.png) no-repeat left center;
-    padding: 15px 0px 15px 60px;
+.n1{/*
+    background: url(../images/pkli1.png) no-repeat left center;*/
+    background: transparent;
+    font-size: 20px;
+    color: black;
+    padding: 10px 10px 10px 10px;
     margin-top: 20px;
+    text-shadow: none;
 }
 .n1-5{
-    background: url(../images/pkli1-5.png) no-repeat left center;
-    padding: 15px 0px 15px 60px;
+    /*background: url(../images/pkli1-5.png) no-repeat left center;*/
+    background: transparent;
+    font-size: 20px;
+    color: black;
+    padding: 10px 10px 10px 10px;
     margin-top: 20px;
+    text-shadow: none;
 }
 .n2{
-    background: url(../images/pkli2.png) no-repeat left center;
-    padding: 15px 0px 15px 60px;
-    margin-top: 20px;
+   /* background: url(../images/pkli2.png) no-repeat left center;*/
+   background: transparent;
+   font-size: 20px;
+   color: black;
+   padding: 10px 10px 10px 10px;
+   margin-top: 20px;
+   text-shadow: none;
 }
 .n2-5{
-    background: url(../images/pkli2-5.png) no-repeat left center;
-    padding: 15px 0px 15px 60px;
-    margin-top: 20px;
+   /* background: url(../images/pkli2-5.png) no-repeat left center;*/
+   background: transparent;
+   font-size: 20px;
+   color: black;
+   padding: 10px 10px 10px 10px;
+   margin-top: 20px;
+   text-shadow: none;
 }
 .n4-5{
-    background: url(../images/pkli4-5.png) no-repeat left center;
-    padding: 15px 0px 15px 60px;
+    /*background: url(../images/pkli4-5.png) no-repeat left center;*/
+    background: transparent;
+    font-size: 20px;
+    color: black;
+    padding: 10px 10px 10px 10px;
     margin-top: 20px;
+    text-shadow: none;
 }
 .n5{
-    background: url(../images/pkli5.png) no-repeat left center;
-    padding: 15px 0px 15px 60px;
+    /*background: url(../images/pkli5.png) no-repeat left center;*/
+    background: transparent;
+    font-size: 20px;
+    color: black;
+    padding: 10px 10px 10px 10px;
     margin-top: 20px;
+    text-shadow: none;
 }
 .n5-5{
-    background: url(../images/pkli5-5.png) no-repeat left center;
-    padding: 15px 0px 15px 60px;
+    /*background: url(../images/pkli5-5.png) no-repeat left center;*/
+    background: transparent;
+    font-size: 20px;
+    color: black;
+    padding: 10px 10px 10px 10px;
     margin-top: 20px;
+    text-shadow: none;
 }
 .n6{
-    background: url(../images/pkli6.png) no-repeat left center;
-    padding: 15px 0px 15px 60px;
+    /*background: url(../images/pkli6.png) no-repeat left center;*/
+    background: transparent;
+    font-size: 20px;
+    color: black;
+    padding: 10px 10px 10px 10px;
     margin-top: 20px;
+    text-shadow: none;
 }
 table{
     width: 90%;
@@ -163,7 +195,7 @@ td:last-child{
     padding-left: 0.5em;
  }
  .marginwasdTop{
-    padding-bottom: 25px;
+    padding-bottom: 20px;
  }
 /*------------------------MENU DE ENTRANTES Y BEBIDAS----------------------*/
 /***************************Footer*********************/
