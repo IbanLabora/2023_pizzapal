@@ -31,8 +31,6 @@
     width: 105px;
     height: 50px;
     padding: 2px;
-   
-   
 }
 .espacio{
     visibility: hidden;
@@ -46,6 +44,9 @@ a:hover {
   }
 .derechosReservados{
     font-size: 12px;
+}
+.menosMargen{
+    margin-top: -50px;
 }
 /*------------------------------MENU DE PIZZAS----------------------------------------*/
 table, span{
@@ -194,8 +195,8 @@ td:last-child{
     background:url(../images/portfoliobg.jpg) !important;
     padding-left: 0.5em;
  }
- .marginwasdTop{
-    padding-bottom: 20px;
+ .masMargin{
+    margin-bottom: 15px;
  }
 /*------------------------MENU DE ENTRANTES Y BEBIDAS----------------------*/
 /***************************Footer*********************/
