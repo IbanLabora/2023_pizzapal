@@ -716,7 +716,7 @@ a.navbar-brand.our_logo{
 
 /* Features section css */
 .features{
-	background:url(../images/ftbg.jpg) center center no-repeat;
+	background:url(../images/ftbg.png) center center no-repeat;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
