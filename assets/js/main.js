@@ -27,6 +27,13 @@ jQuery(document).ready(function ($) {
 		event.preventDefault();
 	});
 	
+	jQuery('.container a').bind('click', function () {
+		$('html , body').stop().animate({
+			scrollTop: $($(this).attr('href')).offset().top - 80
+		}, 1500, 'easeInOutExpo');
+		event.preventDefault();
+	});
+
 	/*
 	jQuery(window).scroll(function () {
 	  var top = jQuery(document).scrollTop();
