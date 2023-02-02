@@ -1,6 +1,15 @@
 ///////////////////////////Pie de pagina//////////////////
+	var url = location.href;
 	const d = new Date();
-	var piepagina = "<p class='derechosReservados'>Made with <i class='fa fa-heart'></i> by <a href='http://bootstrapthemes.co'>Bootstrap Themes</a>" + d.getFullYear()+" All Rights Reserved</p>"
+
+	var piepagina = "Politicas y cookies<p class='derechosReservados'>Made with <i class='fa fa-heart'></i> by <a href='http://bootstrapthemes.co'>Bootstrap Themes</a>" + d.getFullYear()+" All Rights Reserved</p>"
+		
+	var webPoliticas= url.indexOf("politicas.html");
+	if(webPoliticas<0){
+		piepagina ="<a href='politicas.html' style='color:yellow;'>Politicas y cookies</a><p class='derechosReservados'>Made with <i class='fa fa-heart'></i> by <a href='http://bootstrapthemes.co'>Bootstrap Themes</a>" + d.getFullYear()+" All Rights Reserved</p>";
+	}
+	
+	
 	document.getElementById("piepagina").innerHTML = piepagina ;
  ///////////////////////////Pie de pagina//////////////////
 ///////////////////////////funcionamiento del menu//////////////////
@@ -16,3 +25,5 @@
 
 	}
   ///////////////////////////funcionamiento del menu//////////////////
+
+  

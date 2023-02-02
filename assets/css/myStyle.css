@@ -48,6 +48,10 @@ a:hover {
 .menosMargen{
     margin-top: -50px;
 }
+.Insta{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 .justificarTexto{
     text-align: justify;
 }
