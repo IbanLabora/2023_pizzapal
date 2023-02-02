@@ -48,6 +48,9 @@ a:hover {
 .menosMargen{
     margin-top: -50px;
 }
+.justificarTexto{
+    text-align: justify;
+}
 /*------------------------------MENU DE PIZZAS----------------------------------------*/
 table, span{
     margin-left: -10px;
