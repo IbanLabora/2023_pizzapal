@@ -33,6 +33,12 @@ jQuery(document).ready(function ($) {
 		}, 1500, 'easeInOutExpo');
 		event.preventDefault();
 	});
+	jQuery('.volverInicioLogo a').bind('click', function () {
+		$('html , body').stop().animate({
+			scrollTop: $($(this).attr('href')).offset().top - 80
+		}, 1500, 'easeInOutExpo');
+		event.preventDefault();
+	});
 
 	/*
 	jQuery(window).scroll(function () {
