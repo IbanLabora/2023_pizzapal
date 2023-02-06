@@ -214,3 +214,13 @@ td:last-child{
     letter-spacing: 0.15em;
 }
 /***************************Footer*********************/
+/****************cookies y politicas********************/
+#botonCookies{
+    background-color:#1717FF;
+    color: #F9E53C;
+}
+#botonCookies a{
+    color: #F9E53C;
+}
+/************************************/
+
