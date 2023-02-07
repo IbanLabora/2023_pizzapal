@@ -84,8 +84,6 @@ function formularioCookies(){
    var analitica = document.getElementById("Analítica");
    var cookiesNofuncionales = document.getElementById("CookiesNofuncionales")
 
-
-  
    if(funcionales.checked){
     setCookie("username", nombreCookie, 30); 
     console.log(nombreCookie);
