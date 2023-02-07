@@ -3,7 +3,7 @@
 //crear un div con el id "cookiesWeb" en HTML
 //Para darle estilo, crear una clase "estiloCSSCookies" en el .css
 var idcookiesWeb = "cookiesWeb"
-var webConfiguraciónCookies ="''"
+var webConfiguraciónCookies ="'Cookies.html'"
 var nombreCookie="'pizzapala.es'"
 
 var cookiesAnalytics = "cookiesAnalytics_"+nombreCookie;
