@@ -10,13 +10,13 @@ var cookiesAnalytics = "cookiesAnalytics_"+nombreCookie;
 var cookiesOtras = "cookiesOtras_"+nombreCookie;
 
 //con el estilo  pondremos el banner de las cookies donde queremos
-var estiloCSS = "'z-index:20; text-align:center; bottom:0; left:0; position:fixed;width:100%; background-color:#F9E53C;'"
+var estiloCSS = "'z-index:20; text-align:center;position:fixed; bottom:0; left:0; background-color:#F9E53C;'"
 //con el estilo fondoAvisoCookies pondremos un fondo oscuro transparente que impide que se pueda seleccionar por debajo del z-index, si por encima
 var fondoAvisoCookies = "'display:block; background:rgba(0,0,0,.20); position:fixed; z-index:19; width:100vw; height:100vh; top:0; left:0'"
 
 
 //Meter los estilos para los botones
-var divBotonEstilos = " font-family: ChinUpButtercupCuteCaps; font-size: 1.9em; "
+var divBotonEstilos = " font-family: ChinUpButtercupCuteCaps; font-size: 1.9em; padding: 5px"
 
 var divBotonConf = "  "+divBotonEstilos;
 var divBotonAceptar = ""+divBotonEstilos;
@@ -26,21 +26,13 @@ function insertarBannerCookie() {
   var textoCookie = "<div style=" + estiloCSS + " class='estiloCSSCookies' >"
                           +"<h4 style='"+divBotonEstilos+"'>Estamos usando cookies</h4>"
                           + "<p >Utilizamos cookies propias y de terceros para obtener datos estadísticos de la navegación de nuestros usuarios y mejorar nuestros servicios. Si acepta o continúa navegando, consideramos que acepta su uso. Obtener más información.<p>"
-                              + "<div class='container'>"
-                                  + "<div class='row'>"
-                                    + "<div style='"+divBotonConf+"' class='col-md-6'>"
-                                        + "<button id='botonCookies' class='btn-primary mt-3 accept-cookies'>"
-                                          + "<a href='"+webConfiguraciónCookies+"'>Editar Configuración</a>"
-                                        + "</button>"
-                                    + "</div>"
-                                    + "<div style='"+divBotonAceptar+"' class='col-md-6'>"
-                                        + "<button id='botonCookies' class='btn-primary mt-3'>"
-                                          + "<a onclick='hide()'>Aceptar</a>"
-                                        + "</button>"
-                                    + "</div>"
-                              + "</div>"
-                          + "</div>"
-                        + "</div>"
+                              + "<button id='botonCookies' style='"+divBotonEstilos+"'class='btn-primary mt-3 accept-cookies'>"
+                                + "<a href='"+webConfiguraciónCookies+"'>Editar Configuración</a>"
+                              + "</button>"
+                              + "<button id='botonCookies' style='"+divBotonEstilos+"' class='btn-primary mt-3'>"
+                                + "<a onclick='hide()'>Aceptar</a>"
+                              + "</button>"
+                      + "</div>"
                       +"<div style="+fondoAvisoCookies+"></div>";
                       
   document.getElementById("cookiesWeb").innerHTML = textoCookie;
