@@ -8,6 +8,13 @@
     font-family: 'ChinUpButtercupCuteCaps';
     color:#F9E53C;/* #F9E53C;*/
 }
+.fuenteChin_H3_takeaway{
+    font-family: 'ChinUpButtercupCuteCaps';
+    font-size: 3.5rem;
+    letter-spacing: 0.15em;
+    color: #F9E53C; 
+    
+}
 .logoAmarillo{
     width: 40%;
     display:block;
@@ -31,6 +38,15 @@
     width: 105px;
     height: 50px;
     padding: 2px;
+}
+.fuenteChin_boton2{
+    font-family: 'ChinUpButtercupCuteCaps';
+    color: blue;
+    font-size: 1.9em;
+    height: 50px;
+    padding: 2px;
+    margin-bottom: 10px;
+
 }
 .espacio{
     visibility: hidden;
