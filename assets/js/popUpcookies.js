@@ -86,15 +86,15 @@ function ocultarAutomaticamente() {
 
 function formularioCookies(){
    
-  if(document.getElementById(idCheck).checked){
+  if(document.getElementById("Funcionales").checked){
     setCookie("username", nombreCookie, 30); 
     console.log(nombreCookie);
   }
-  if(document.getElementById(idCheck).checked){
+  if(document.getElementById("Analítica").checked){
     setCookie("username", cookiesAnalytics, 30) ;
     console.log(cookiesAnalytics);
   }
-  if(document.getElementById(idCheck).checked){
+  if(document.getElementById("CookiesNofuncionales").checked){
     setCookie("username", cookiesOtras, 30) ;
     console.log(cookiesOtras);
   }

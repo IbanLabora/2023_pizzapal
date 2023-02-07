@@ -80,21 +80,21 @@
                         <div class="cookiesConfig">
                             <h4 class="fuenteChin_H3">Configuracion de cookies</h4>
                             <p id="mensajeCookies"></p>
-                            <form onsubmit="formularioCookies()">
+                            <form>
                                 <div class="bordeCookies">
-                                    <p class="cookiesConfiginput fuenteChin_H4"><input type="checkbox"> Cookies Funcionales</p>
+                                    <p class="cookiesConfiginput fuenteChin_H4"><input type="checkbox" id="Funcionales"> Cookies Funcionales</p>
                                     <p class="cookiesConfig2">Cookies que aseguran que el sitio web funciona adecuadamente.</p>
                                 </div>
                                 <div class="bordeCookies">
-                                    <p class="cookiesConfiginput fuenteChin_H4"><input type="checkbox"> Analítica</p>
+                                    <p class="cookiesConfiginput fuenteChin_H4"><input type="checkbox" id="Analítica"> Analítica</p>
                                     <p class="cookiesConfig2">Los detalles que recopilamos con estas cookies se combinan y aceptan con el fin de realizar análisis estadísticos.</p>
                                 </div>
                                 <div class="bordeCookies">
-                                    <p class="cookiesConfiginput fuenteChin_H4"><input type="checkbox"> Cookies no funcionales</p>
+                                    <p class="cookiesConfiginput fuenteChin_H4"><input type="checkbox" id="CookiesNofuncionales"> Cookies no funcionales</p>
                                     <p class="cookiesConfig2">Al aceptar estas cookies, su uso de Internet puede ser monitoreado por las redes sociales, publicidad u otro tipo de discursos.</p>
                                 </div>
                                 <div>
-                                    <input type="button" value="Guardar">                                    
+                                    <input type="button" value="Guardar" onclick="formularioCookies()">                                    
                                 </div>
 
                             </form>
@@ -153,6 +153,8 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/myjs.js"></script>
     
+    <script src="assets/js/popUpcookies.js"></script>
+
 </body>
 
 </html>
