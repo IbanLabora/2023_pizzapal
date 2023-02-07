@@ -222,5 +222,21 @@ td:last-child{
 #botonCookies a{
     color: #F9E53C;
 }
+.cookiesConfig{
+    margin-bottom: 25px;
+}
+.cookiesConfig2{
+    margin-left: 15px;
+    margin-right: -10px;
+    padding-bottom: 25px;
+}
+.cookiesConfiginput{
+    padding: 5px;
+}
+.bordeCookies{
+    border: 1px #ccc solid;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 /************************************/
 
