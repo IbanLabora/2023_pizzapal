@@ -705,6 +705,7 @@ a.navbar-brand.our_logo{
 .abouts_content{
 	padding:120px 0px;
 	display:inline-block;
+    margin-top: -40px;
 }
 .single_abouts_text h4{
 	/*color:#000000;*/
