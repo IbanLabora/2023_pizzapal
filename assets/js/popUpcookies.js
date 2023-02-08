@@ -4,8 +4,9 @@
 //Para darle estilo, crear una clase "estiloCSSCookies" en el .css
 var idcookiesWeb = "cookiesWeb"
 var webConfiguraciónCookies ="Cookies.html"
-var nombreCookie="'pizzapala.es'"
 
+var nombreCookie="PizzaPala"
+var cookieFuncional = "CookieFuncional_"+nombreCookie;
 var cookiesAnalytics = "cookiesAnalytics_"+nombreCookie;
 var cookiesOtras = "cookiesOtras_"+nombreCookie;
 
@@ -57,16 +58,20 @@ function setCookie(cname, cvalue, exdays) {
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
+function borrarCookie (cname,){
+  document.cookie = cname + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+}
+
 function hide() {
-  setCookie("username", nombreCookie, 30) ;
-  setCookie("username", cookiesAnalytics, 30) ;
-  setCookie("username", cookiesOtras, 30) ;
+  setCookie(cookieFuncional, cookieFuncional, 30) ;
+  setCookie(cookiesAnalytics, cookiesAnalytics, 30) ;
+  setCookie(cookiesOtras, cookiesOtras, 30) ;
   document.getElementById(idcookiesWeb).style.visibility = "hidden";
   document.getElementById(idcookiesWeb).innerHTML = "";
 }
 
 function ocultarAutomaticamente() {
-  var cookie = readCookie(nombreCookie);
+  var cookie = readCookie(cookieFuncional);
   if (cookie >= 0) {
     document.getElementById(idcookiesWeb).style.visibility = "hidden";
     document.getElementById(idcookiesWeb).innerHTML = "";
@@ -76,24 +81,27 @@ function ocultarAutomaticamente() {
 ////
 
 
-function formularioCookies(){
+function formularioCookies(){ 
+  //Función del formulario que servira para mantenimiento de las futuras cookies
   //borrar cookies 
-  
-  
-  var funcionales = document.getElementById("Funcionales");
-   var analitica = document.getElementById("Analítica");
-   var cookiesNofuncionales = document.getElementById("CookiesNofuncionales")
+  borrarCookie(cookieFuncional);
+  borrarCookie(cookiesAnalytics);
+  borrarCookie(cookiesOtras);
 
-   if(funcionales.checked){
-    setCookie("username", nombreCookie, 30); 
+  var funcionales = document.getElementById("Funcionales");
+  var analitica = document.getElementById("Analítica");
+  var cookiesNofuncionales = document.getElementById("CookiesNofuncionales")
+
+  if(funcionales.checked){
+    setCookie(cookieFuncional, cookieFuncional, 30); 
     console.log(nombreCookie);
   }
   if(analitica.checked){
-    setCookie("username", cookiesAnalytics, 30) ;
+    setCookie(cookiesAnalytics, cookiesAnalytics, 30) ;
     console.log(cookiesAnalytics);
   }
   if(cookiesNofuncionales.checked){
-    setCookie("username", cookiesOtras, 30) ;
+    setCookie(cookiesOtras, cookiesOtras, 30) ;
     console.log(cookiesOtras);
   }
   document.getElementById("mensajeCookies").innerHTML = "La configuración se ha guardado correctamente"
