@@ -2,11 +2,11 @@
 var url = location.href;
 const d = new Date();
 
-var piepagina = "Politicas y cookies<p class='derechosReservados'>Todos los derechos reservados a Georgy Fieraru y Joel Delgado<i class='fa fa-heart'></i> by <a href='http://bootstrapthemes.co'>Bootstrap Themes</a>" + d.getFullYear() + "</p>"
+var piepagina = "<p class='derechosReservados'>"+d.getFullYear()+ " Copyright PizzaPala. Diseñado y Desarrollado por Georgy Fieraru y Joel Delgado<i class='fa fa-heart'></i> by <a href='http://bootstrapthemes.co'>Bootstrap Themes</a></p>";
 var webCookies = url.indexOf("Cookies.html");
 var webPoliticas = url.indexOf("politicas.html");
 if (webPoliticas < 0 || webCookies<0) {
-	piepagina = "<p class='derechosReservados'> Todos los derechos reservados a Georgy Fieraru y Joel Delgado<i class='fa fa-heart'></i> by <a href='http://bootstrapthemes.co'>Bootstrap Themes</a>" + d.getFullYear() + "</p>";
+	piepagina = "<p class='derechosReservados'>"+d.getFullYear()+ " Copyright PizzaPala. Diseñado y Desarrollado por Georgy Fieraru y Joel Delgado<i class='fa fa-heart'></i> by <a href='http://bootstrapthemes.co'>Bootstrap Themes</a></p>";
 }
 
 
