@@ -26,6 +26,12 @@
 					document.getElementById("errorCampo").innerHTML="No puedes dejar el campo "+idAcomprobar+" vacio ";
 						return false;
 					}
+		idAcomprobar = "Comentario";
+			if(!esVacio(idAcomprobar) || !campoNoCaracteresEspeciales(idAcomprobar) || !campoNumero(idAcomprobar)) {
+			document.getElementById("errorCampo").innerHTML="No puedes dejar el campo "+idAcomprobar+" vacio ";
+			console.log(idAcomprobar);
+			return false;
+		}
 		
 	}
 	
