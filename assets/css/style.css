@@ -448,7 +448,7 @@ button.btn-lg:hover{
     border-color: transparent;
 }
 .btn-default:hover {
-    border-color:blue
+    border-color:blue;
     color: #f56363;
     background-color: #ffffff;
 }

@@ -3,7 +3,7 @@
 //crear un div con el id "cookiesWeb" en HTML
 //Para darle estilo, crear una clase "estiloCSSCookies" en el .css
 var idcookiesWeb = "cookiesWeb"
-var webConfiguraciónCookies ="'Cookies.html'"
+var webConfiguraciónCookies ="Cookies.html"
 var nombreCookie="'pizzapala.es'"
 
 var cookiesAnalytics = "cookiesAnalytics_"+nombreCookie;
@@ -39,9 +39,9 @@ function insertarBannerCookie() {
 }
 //insertarBannerCookie();
 
-function readCookie() { 
+function readCookie(nombreDeLaCookie) { 
   let cadena = document.cookie;
-  var index = cadena.indexOf(nombreCookie);
+  var index = cadena.indexOf(nombreDeLaCookie);
   if (index >= 0) {
     console.log("la palabra existe dentro de la cadena y se encuentra en la posición " + index);
   } else {
@@ -66,7 +66,7 @@ function hide() {
 }
 
 function ocultarAutomaticamente() {
-  var cookie = readCookie();
+  var cookie = readCookie(nombreCookie);
   if (cookie >= 0) {
     document.getElementById(idcookiesWeb).style.visibility = "hidden";
     document.getElementById(idcookiesWeb).innerHTML = "";
@@ -77,19 +77,50 @@ function ocultarAutomaticamente() {
 
 
 function formularioCookies(){
-   
-  if(document.getElementById("Funcionales").checked){
+  //borrar cookies 
+  
+  
+  var funcionales = document.getElementById("Funcionales");
+   var analitica = document.getElementById("Analítica");
+   var cookiesNofuncionales = document.getElementById("CookiesNofuncionales")
+
+   if(funcionales.checked){
     setCookie("username", nombreCookie, 30); 
     console.log(nombreCookie);
   }
-  if(document.getElementById("Analítica").checked){
+  if(analitica.checked){
     setCookie("username", cookiesAnalytics, 30) ;
     console.log(cookiesAnalytics);
   }
-  if(document.getElementById("CookiesNofuncionales").checked){
+  if(cookiesNofuncionales.checked){
     setCookie("username", cookiesOtras, 30) ;
     console.log(cookiesOtras);
   }
   document.getElementById("mensajeCookies").innerHTML = "La configuración se ha guardado correctamente"
+
+}
+
+function formularioCargarCookies(){
+  
+  var funcionales =  readCookie(nombreCookie)
+  var analitica  = readCookie(cookiesAnalytics)
+  var cookiesNofuncionales=  readCookie(cookiesOtras)
+   
+  if(funcionales>=0){
+      document.getElementById("Funcionales").checked = true;
+      console.log(nombreCookie);
+  }
+
+  if(analitica.checked>=0){
+    document.getElementById("Analítica").checked = true;
+    console.log(cookiesAnalytics);
+  }
+
+  if(cookiesNofuncionales.checked>=0){
+    document.getElementById("CookiesNofuncionales").checked = true;
+    console.log(cookiesOtras);
+  }
+
+  document.getElementById("mensajeCookies").innerHTML = "La configuración se ha guardado correctamente";
 
 }
