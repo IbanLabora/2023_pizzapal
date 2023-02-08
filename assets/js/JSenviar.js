@@ -32,6 +32,12 @@
 			console.log(idAcomprobar);
 			return false;
 		}
+		idAcomprobar = "checkedPoliticas";
+			if(!esVacio(idAcomprobar) || !campoNoCaracteresEspeciales(idAcomprobar) || !campoNumero(idAcomprobar)) {
+			document.getElementById("errorCampo").innerHTML="No puedes dejar el campo "+idAcomprobar+" vacio ";
+			console.log(idAcomprobar);
+			return false;
+		}
 		
 	}
 	
@@ -43,7 +49,15 @@ function validarTelefono(idTelefono){
 	}
 	return true;
 }
-
+function checkObligatorio(idCheck){
+	var elemento = document.getElementById(idCheck);
+	//obligara a que el check con este id, sea obligatorio pulsarlo
+   if( !elemento.checked ) {
+	   //alert("debe acceptar los terminos");	
+	   return false;
+   }
+   return true;
+}
 	function esVacio(id){
 		var valor= document.getElementById(id).value;
 			/*Si el valor obtenido es Null, su longitud es igual a 0 o posee caracteres
