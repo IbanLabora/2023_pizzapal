@@ -29,13 +29,6 @@ $cuerpo = '<!doctype html>
                                                color: #00a885;
                                                border-radius:10px;">'.$_POST['Nombre'].'</span>
                                             </p>
-                                            <p style="color:white ;" class="col-md-8">Apellidos<br>
-                                                <span style=" background-color: white;                 
-                                               margin:7px ;
-                                               padding: 5px;
-                                               color: #00a885;
-                                               border-radius:10px;">'.$_POST['Apellido'].'</span>
-                                            </p>
                                         </div>
                                         <div class="row">
                                             <p style="color:white ;" class="col-md-4">Telefono<br>

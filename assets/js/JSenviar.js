@@ -147,7 +147,7 @@ function validarTelefono(idTelefono){
 				  .append("<p class='text-center'>Nos pondremos en contacto con usted lo antes posible</p>")
 				  .hide()
 				  .fadeIn(3000, function() {
-					window.location.assign(webOficial);
+					/*si fuera necesario redirigir despues de enviar el formulariowindow.location.assign(webOficial);*/
 				  });
 				}
 			  });
