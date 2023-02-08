@@ -6,7 +6,78 @@
 	//FIN pie de pagina con el logo y nombre
 
 //formulario de cita rehabilitacion y orientación
+	function validacionDeCampos(){
+		document.getElementById("errorCampo").innerHTML="";
+		
+		
+		var idAcomprobar = "Nombre";
+		if(!esVacio(idAcomprobar) || !campoNoCaracteresEspeciales(idAcomprobar) || !campoNumero(idAcomprobar)) {
+			document.getElementById("errorCampo").innerHTML="No puedes dejar el campo "+idAcomprobar+" vacio ";
+			console.log(idAcomprobar);
+			return false;
+		}
+		idAcomprobar = "Tel";
+		if(!esVacio(idAcomprobar) || !campoNoCaracteresEspeciales(idAcomprobar) || !campoNumero(idAcomprobar)) {
+			document.getElementById("errorCampo").innerHTML="No puedes dejar el campo "+idAcomprobar+" vacio ";
+			return false;
+		}
+		 idAcomprobar = "Email";
+					if(!validarMAIL(idAcomprobar)){
+					document.getElementById("errorCampo").innerHTML="No puedes dejar el campo "+idAcomprobar+" vacio ";
+						return false;
+					}
+		
+	}
+	
+	
+function validarTelefono(idTelefono){
+	valor = document.getElementById(idTelefono).value;
+	if( !(/^\d{9}$/.test(valor)) ) {
+		return false;
+	}
+	return true;
+}
 
+	function esVacio(id){
+		var valor= document.getElementById(id).value;
+			/*Si el valor obtenido es Null, su longitud es igual a 0 o posee caracteres
+				extraÃ±os, dara error*/
+			if(valor==null || valor.lenght == 0 || /^\s+$/.test(valor)){
+				console.log(id)
+				document.getElementById(id).style.bordercolor ="red";
+				return false;
+			}
+				return true;
+			}
+			function campoNumero(id){
+				valor = document.getElementById(id).value;
+				/*isNaN devolvera un true si el contendio de valor son letras.
+				Si accede a el if quiere decir que no es un numero*/
+				if( !isNaN(valor)) {
+					marcarYreiniciar(id);
+					return false;
+				}
+				return true;
+			}
+			function campoNoCaracteresEspeciales(id){
+				valor = document.getElementById(id).value;
+				const formato = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+				if(  formato.test(valor)) {
+					alert("no puedes introducir estos caracteres en  " + id );
+					return false;
+				}
+				return true;
+			}	
+			function validarMAIL(idEmail){
+				valor = document.getElementById(idEmail).value;
+				if(!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(valor))){
+					//alert("correo mal introducido");
+					marcarYreiniciar(idMail);	
+					return false;
+				}
+				return true;
+			}
+										
 /************************Expresiones Regulares*************/
 	function expresionRegDNI(dni){
 		var expresiondni = /^\d{8}[a-zA-Z]$/;
@@ -86,73 +157,3 @@
 		});
 	});
 
-/*************************HTML Cita.html*******************************
-	
-	$(function() {
-		
-		$("#botoncita").click(function() {
-			  // validate and process form here
-			  
-			  $('.error').hide();
-			  var name = $("input#name").val();
-				if (name == "") {
-				$("label#name_error").show();
-				$("input#name").focus();
-				return false;
-			  }
-			  //Expresiones regulares 
-			  
-			  var dni = $("input#dni").val();
-			  if (!expresionRegDNI(dni)){
-				$("label#dni").show();
-				$("input#dni").focus();
-				return false;
-			  }
-			  
-			  var phone = $("input#phone").val();
-			  var expresiontelefono = /^\d{9}$/;
-				if (!(expresiontelefono.test(phone))) {
-				$("label#phone_error").show();
-				$("input#phone").focus();
-				return false;
-			  }
-				var email = $("input#email").val();
-				var expresionmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
-				if (!(expresionmail.test(email))){
-				$("label#email_error").show();
-				$("input#email").focus();
-				return false;
-			  }
-			  //Fin expresiones regulares
-			  var cita = $("select#tipocita").children("option:selected").val();//recoge el valor del hijo de option que es select
-			  console.log(cita);
-				if (cita == "Otra") {
-					$("label#cita_error").show();
-					$("input#tipocita").focus();
-					return false;
-				  }
-		   var comentarios = document.getElementById('Comentarios').value;
-		   var dataString = 'Nombre='+name+ '&Email=' +email+ '&Telefono=' +phone+ '&dni=' +dni+ '&tipodecita=' +cita+ '&Comentarios='+comentarios;
-			  //alert (dataString);return false;
-			  $.ajax({
-				type: "POST",
-				url: "assets/php/enviarCita.php",
-				data: dataString,
-				success: function() {
-				  $('#formcita').html("<div id='message'></div>");
-				  $('#message').html("<h3 class='text-center'>Formulario enviado</h3>")
-				  .append("<p class='text-center'>Nos pondremos en contacto con usted para acordar la fecha y la hora de su cita</p>")
-				  .hide()
-				  .fadeIn(3000, function() {
-					window.location.assign(webOficial);
-				  });
-				}
-			  });
-			  return false;
-		 
-		  
-		});
-	});
-	
-
-///////////////////////////////////*/
