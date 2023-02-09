@@ -87,6 +87,7 @@ function formularioCookies(){
   borrarCookie(cookieFuncional);
   borrarCookie(cookiesAnalytics);
   borrarCookie(cookiesOtras);
+  
 
   var funcionales = $("input#Funcionales").prop("checked");
   var analitica = $("input#Analitica").prop("checked");
@@ -104,8 +105,10 @@ function formularioCookies(){
     setCookie(cookiesOtras, cookiesOtras, 30) ;
     console.log(cookiesOtras);
   }
-  document.getElementById("mensajeCookies").innerHTML = "La configuración se ha guardado correctamente"
 
+  document.getElementById("mensajeCookies").innerHTML = "La configuración se ha guardado correctamente"
+  
+ 
 }
 
 function formularioCargarCookies(){
@@ -129,6 +132,6 @@ function formularioCargarCookies(){
     console.log(cookiesOtras);
   }
 
-  document.getElementById("mensajeCookies").innerHTML = "La configuración se ha guardado correctamente";
+
 
 }
