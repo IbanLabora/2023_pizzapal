@@ -84,7 +84,7 @@ var parteAbajo ="<div class='col-md-4'>"
 								+"<div class='form-group' id='mensaje'>"
 									+"<textarea id='Comentario' class='form-control' name='comentario' rows='3' placeholder='Mensaje'>"+"</textarea>"
 								+"</div>"
-								+"<input type='checkbox' id='checkedPoliticas' value='Acepto' required>Accepto la <a href ='politicas.html' >politica de privacidad</a>"+"</input>"
+								+"<input type='checkbox' id='checkedPoliticas' value='Acepto' required> Acepto la <a href ='politicas.html' style='color:yellow;' >politica de privacidad</a>"+"</input>"
 
 								+"<div class='form-group' id='enviar'>"
 									+"<input id='botonEnviar' type='submit' value='Enviar' class='btn btn-primary fuenteChin_boton'>"+"</input>"
