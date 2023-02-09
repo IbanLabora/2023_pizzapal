@@ -2,7 +2,7 @@
 
 $destinatario = "ibanvallespont@gmail.com";//"pepito@desarrolloweb.com"; 
 $asunto = $_POST['Nombre'].": Formulario Contacto Web"; 
-$imagen = 'https://ibanvallespont.esotracaja.com/pizzapala/assets/images/logoAmarillo.png'
+$imagen = 'https://ibanvallespont.esotracaja.com/pizzapala/assets/images/logoAmarillo.png';
 $cuerpo = '<!doctype html>
 
 <head>
