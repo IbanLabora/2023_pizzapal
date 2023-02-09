@@ -88,19 +88,19 @@ function formularioCookies(){
   borrarCookie(cookiesAnalytics);
   borrarCookie(cookiesOtras);
 
-  var funcionales = document.getElementById("Funcionales");
-  var analitica = document.getElementById("Analítica");
-  var cookiesNofuncionales = document.getElementById("CookiesNofuncionales")
+  var funcionales = $("input#Funcionales").prop("checked");
+  var analitica = $("input#Analitica").prop("checked");
+  var otras = $("input#Otras").prop("checked");
 
-  if(funcionales.checked){
+  if(funcionales){
     setCookie(cookieFuncional, cookieFuncional, 30); 
-    console.log(nombreCookie);
+    console.log(cookieFuncional);
   }
-  if(analitica.checked){
+  if(analitica){
     setCookie(cookiesAnalytics, cookiesAnalytics, 30) ;
     console.log(cookiesAnalytics);
   }
-  if(cookiesNofuncionales.checked){
+  if(otras){
     setCookie(cookiesOtras, cookiesOtras, 30) ;
     console.log(cookiesOtras);
   }
@@ -110,22 +110,22 @@ function formularioCookies(){
 
 function formularioCargarCookies(){
   
-  var funcionales =  readCookie(nombreCookie)
+  var funcionales =  readCookie(cookieFuncional)
   var analitica  = readCookie(cookiesAnalytics)
-  var cookiesNofuncionales=  readCookie(cookiesOtras)
+  var otras=  readCookie(cookiesOtras)
    
   if(funcionales>=0){
       document.getElementById("Funcionales").checked = true;
-      console.log(nombreCookie);
+      console.log(cookieFuncional);
   }
 
-  if(analitica.checked>=0){
-    document.getElementById("Analítica").checked = true;
+  if(analitica>=0){
+    document.getElementById("Analitica").checked = true;
     console.log(cookiesAnalytics);
   }
 
-  if(cookiesNofuncionales.checked>=0){
-    document.getElementById("CookiesNofuncionales").checked = true;
+  if(otras>=0){
+    document.getElementById("Otras").checked = true;
     console.log(cookiesOtras);
   }
 

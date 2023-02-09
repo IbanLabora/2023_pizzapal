@@ -7,8 +7,7 @@
 
 //formulario de cita rehabilitacion y orientación
 	function validacionDeCampos(){
-		document.getElementById("errorCampo").innerHTML="";
-		
+		document.getElementById("errorCampo").innerHTML="";		
 		
 		var idAcomprobar = "Nombre";
 		if(!esVacio(idAcomprobar) || !campoNoCaracteresEspeciales(idAcomprobar) || !campoNumero(idAcomprobar)) {
@@ -17,15 +16,17 @@
 			return false;
 		}
 		idAcomprobar = "Tel";
-		if(!esVacio(idAcomprobar) || !campoNoCaracteresEspeciales(idAcomprobar) || !campoNumero(idAcomprobar)) {
+		if(!validarTelefono(idAcomprobar)) {
 			document.getElementById("errorCampo").innerHTML="No puedes dejar el campo "+idAcomprobar+" vacio ";
+			console.log(idAcomprobar);			
 			return false;
 		}
 		 idAcomprobar = "Email";
-					if(!validarMAIL(idAcomprobar)){
-					document.getElementById("errorCampo").innerHTML="No puedes dejar el campo "+idAcomprobar+" vacio ";
-						return false;
-					}
+		if(!validarMAIL(idAcomprobar)){
+		document.getElementById("errorCampo").innerHTML="No puedes dejar el campo "+idAcomprobar+" vacio ";
+		console.log(idAcomprobar);
+			return false;
+		}
 		idAcomprobar = "Comentario";
 			if(!esVacio(idAcomprobar) || !campoNoCaracteresEspeciales(idAcomprobar) || !campoNumero(idAcomprobar)) {
 			document.getElementById("errorCampo").innerHTML="No puedes dejar el campo "+idAcomprobar+" vacio ";
@@ -33,11 +34,13 @@
 			return false;
 		}
 		idAcomprobar = "checkedPoliticas";
-			if(!esVacio(idAcomprobar) || !campoNoCaracteresEspeciales(idAcomprobar) || !campoNumero(idAcomprobar)) {
+			if(!checkObligatorio(idAcomprobar)) {
 			document.getElementById("errorCampo").innerHTML="No puedes dejar el campo "+idAcomprobar+" vacio ";
 			console.log(idAcomprobar);
 			return false;
 		}
+
+		return true;
 		
 	}
 	
@@ -126,36 +129,41 @@ function checkObligatorio(idCheck){
 		
 		$("#botonEnviar").click(function() {
 			  // validate and process form here
-			  
+			 
 			  $('.error').hide();
 			  var name = $("input#Nombre").val();
 				if (name == "") {
 				$("input#Nombre").focus();
 				return false;
 			  }
-			  /*
-			  var apellido = $("input#apellido").val();
-				if (apellido == "") {
-				$("label#apellido_error").show();
-				$("input#apellido").focus();
-				return false;
-			  }*/
+			 
 			  //Expresiones regulares 
 			  
 			  var phone = $("input#Tel").val();
-				if (!(expresionRegTel(phone))) {
+			if (!(expresionRegTel(phone))) {
 				$("input#Tel").focus();
 				return false;
 			  }
 				var email = $("input#Email").val();
-				if (!(expresionRegEmail(email))){
+			if (!(expresionRegEmail(email))){
 				$("input#Email").focus();
 				return false;
 			  }
-			  var comentarios = document.getElementById('Comentario').value;
+
+			  var Comentario = $("textarea#Comentario").val();
+				if (Comentario == "") {
+				$("textarea#Comentario").focus();
+				return false;
+			  }
+
+
+				if (!($("input#checkedPoliticas").prop("checked"))) {
+				$("input#checkedPoliticas").focus();
+				return false;
+			  }
 			  //Fin expresiones regulares
 		  
-		   var dataString = 'Nombre='+name+ '&Email=' +email+ '&Tel=' +phone+ '&Comentario='+comentarios;
+		   var dataString = 'Nombre='+name+ '&Email=' +email+ '&Tel=' +phone+ '&Comentario='+Comentario;
 			  //alert (dataString);return false;
 			  $.ajax({
 				type: "POST",
@@ -167,7 +175,8 @@ function checkObligatorio(idCheck){
 				  .append("<p class='text-center'>Nos pondremos en contacto con usted lo antes posible</p>")
 				  .hide()
 				  .fadeIn(3000, function() {
-					/*si fuera necesario redirigir despues de enviar el formulariowindow.location.assign(webOficial);*/
+					/*si fuera necesario redirigir despues de enviar el formulario*/
+					window.location.assign(location.href);
 				  });
 				}
 			  });
