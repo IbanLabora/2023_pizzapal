@@ -5,102 +5,47 @@
 	//fecha del año y pie de pagina
 	//FIN pie de pagina con el logo y nombre
 
-//formulario de cita rehabilitacion y orientación
-	function validacionDeCampos(){
-		document.getElementById("errorCampo").innerHTML="";		
-		
-		var idAcomprobar = "Nombre";
-		if(!esVacio(idAcomprobar) || !campoNoCaracteresEspeciales(idAcomprobar) || !campoNumero(idAcomprobar)) {
-			document.getElementById("errorCampo").innerHTML="No puedes dejar el campo "+idAcomprobar+" vacio ";
-			console.log(idAcomprobar);
-			return false;
-		}
-		idAcomprobar = "Tel";
-		if(!validarTelefono(idAcomprobar)) {
-			document.getElementById("errorCampo").innerHTML="No puedes dejar el campo "+idAcomprobar+" vacio ";
-			console.log(idAcomprobar);			
-			return false;
-		}
-		 idAcomprobar = "Email";
-		if(!validarMAIL(idAcomprobar)){
-		document.getElementById("errorCampo").innerHTML="No puedes dejar el campo "+idAcomprobar+" vacio ";
-		console.log(idAcomprobar);
-			return false;
-		}
-		idAcomprobar = "Comentario";
-			if(!esVacio(idAcomprobar) || !campoNoCaracteresEspeciales(idAcomprobar) || !campoNumero(idAcomprobar)) {
-			document.getElementById("errorCampo").innerHTML="No puedes dejar el campo "+idAcomprobar+" vacio ";
-			console.log(idAcomprobar);
-			return false;
-		}
-		idAcomprobar = "checkedPoliticas";
-			if(!checkObligatorio(idAcomprobar)) {
-			document.getElementById("errorCampo").innerHTML="No puedes dejar el campo "+idAcomprobar+" vacio ";
-			console.log(idAcomprobar);
-			return false;
-		}
+//formulario de cita rehabilitacion y orientación	
 
+	function checkObligatorio(idCheck){
+		var elemento = document.getElementById(idCheck);
+		//obligara a que el check con este id, sea obligatorio pulsarlo
+		if( !elemento.checked ) {
+			//alert("debe acceptar los terminos");	
+			return false;
+		}
 		return true;
-		
 	}
-	
-	
-function validarTelefono(idTelefono){
-	valor = document.getElementById(idTelefono).value;
-	if( !(/^\d{9}$/.test(valor)) ) {
-		return false;
-	}
-	return true;
-}
-function checkObligatorio(idCheck){
-	var elemento = document.getElementById(idCheck);
-	//obligara a que el check con este id, sea obligatorio pulsarlo
-   if( !elemento.checked ) {
-	   //alert("debe acceptar los terminos");	
-	   return false;
-   }
-   return true;
-}
 	function esVacio(id){
-		var valor= document.getElementById(id).value;
-			/*Si el valor obtenido es Null, su longitud es igual a 0 o posee caracteres
-				extraÃ±os, dara error*/
-			if(valor==null || valor.lenght == 0 || /^\s+$/.test(valor)){
-				console.log(id)
-				document.getElementById(id).style.bordercolor ="red";
+	var valor= document.getElementById(id).value;
+		/*Si el valor obtenido es Null, su longitud es igual a 0 o posee caracteres
+			extraÃ±os, dara error*/
+		if(valor==null || valor.lenght == 0 || /^\s+$/.test(valor)){
+			console.log(id)
+			document.getElementById(id).style.bordercolor ="red";
+			return false;
+		}
+			return true;
+	}
+	function campoNumero(id){
+			valor = document.getElementById(id).value;
+			/*isNaN devolvera un true si el contendio de valor son letras.
+			Si accede a el if quiere decir que no es un numero*/
+			if( !isNaN(valor)) {
+				//marcarYreiniciar(id);
 				return false;
 			}
-				return true;
+			return true;
+	}
+	function campoNoCaracteresEspeciales(id){
+			valor = document.getElementById(id).value;
+			const formato = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+			if(  formato.test(valor)) {
+				alert("no puedes introducir estos caracteres en  " + id );
+				return false;
 			}
-			function campoNumero(id){
-				valor = document.getElementById(id).value;
-				/*isNaN devolvera un true si el contendio de valor son letras.
-				Si accede a el if quiere decir que no es un numero*/
-				if( !isNaN(valor)) {
-					marcarYreiniciar(id);
-					return false;
-				}
-				return true;
-			}
-			function campoNoCaracteresEspeciales(id){
-				valor = document.getElementById(id).value;
-				const formato = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
-				if(  formato.test(valor)) {
-					alert("no puedes introducir estos caracteres en  " + id );
-					return false;
-				}
-				return true;
-			}	
-			function validarMAIL(idEmail){
-				valor = document.getElementById(idEmail).value;
-				if(!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(valor))){
-					//alert("correo mal introducido");
-					marcarYreiniciar(idMail);	
-					return false;
-				}
-				return true;
-			}
-										
+			return true;
+	}											
 /************************Expresiones Regulares*************/
 	function expresionRegDNI(dni){
 		var expresiondni = /^\d{8}[a-zA-Z]$/;
