@@ -236,6 +236,9 @@ td:last-child{
     font-size: 2.5em;
     letter-spacing: 0.15em;
 }
+.enlaceFooter{
+    color:yellow;
+}
 /***************************Footer*********************/
 /****************cookies y politicas********************/
 #botonCookies{
